@@ -199,6 +199,7 @@ li {
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 1001; /* Ensuring it is above the header but below the modal */
     }
 
     .nav-links li {
@@ -208,5 +209,22 @@ li {
     .nav-links.active {
         display: flex;
         transform: translateX(0);
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px; /* Added padding for styling */
+    }
+
+    #navbar ul li {
+        width: 100%; /* Full width for each link */
+    }
+
+    #navbar ul li a {
+        display: block; /* Makes the entire area clickable */
+        padding: 10px; /* More clickable area */
+        width: 100%; /* Ensures full width */
+        text-align: left; /* Align text to left */
     }
 }
