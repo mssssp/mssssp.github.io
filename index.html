@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your MSSP/Cybersecurity Company</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+<header>
+    <nav id="navbar">
+        <img src="https://github.com/mssssp/mssssp.github.io-/blob/main/logo.png?raw=true" width="100" height="100"alt="Company Logo">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#monitoring">24x7 Monitoring</a></li>
+            <li><a href="#incident-response">Incident Response</a></li>
+            <li><a href="#pen-testing">Penetration Testing</a></li>
+            <li><a href="#cyber-threat-intelligence">Cyber Threat Intelligence</a></li>
+            <li><a href="#threat-hunting">Threat Hunting</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#" id="customerPortal">Customer Portal</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="portalModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+			<p>Login feature coming soon!</p>
+				<form>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Your email" disabled>
+
+					<label for="pwd">Password:</label>
+					<input type="password" id="pwd" name="password" placeholder="Your password" disabled>
+
+					<button type="submit" disabled>Login</button>
+				</form>
+    </div>
+</div>
+<!-- Privacy Policy Modal -->
+<div id="privacyModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('privacyModal')">&times;</span>
+        <h2>Privacy Policy</h2>
+        
+        <h3>1. Introduction</h3>
+        <p>This Privacy Policy outlines our commitment to protecting the privacy and personal data of our users.</p>
+
+        <h3>2. Data Collection and Use</h3>
+        <p>We collect personal data such as names, email addresses, and usage data to provide and improve our services.</p>
+
+        <h3>3. Data Sharing and Disclosure</h3>
+        <p>Your data is not shared except as required by law or to provide our services, and we take steps to protect your information.</p>
+
+        <h3>4. User Rights</h3>
+        <p>Users have the right to access, correct, or delete their personal data, and can contact us for these purposes.</p>
+
+        <h3>5. Data Security</h3>
+        <p>We employ robust security measures to protect user data from unauthorized access, alteration, and disclosure.</p>
+
+        <h3>6. Cookies and Tracking Technologies</h3>
+        <p>Our website uses cookies for functionality and analytics, and users can control these settings in their browser.</p>
+
+        <h3>7. Policy Updates</h3>
+        <p>We may update this policy, and will notify users of significant changes via our website or through direct communication.</p>
+
+        <h3>8. Contact Information</h3>
+        <p>For any questions or concerns regarding this policy, please contact us at support@company.com</p>
+    </div>
+</div>
+
+
+<!-- Terms of Service Modal -->
+<div id="termsModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('termsModal')">&times;</span>
+        <h2>Terms of Service</h2>
+        
+        <h3>1. Acceptance of Terms</h3>
+        <p>By using our services, you agree to these terms. If you do not agree, do not use our services.</p>
+
+        <h3>2. Use of Services</h3>
+        <p>Services are provided as-is. Users are responsible for compliance with local laws and regulations.</p>
+
+        <h3>3. User Responsibilities</h3>
+        <p>Users must not use our services for illegal activities or violate the rights of others.</p>
+
+        <h3>4. Service Modifications</h3>
+        <p>We reserve the right to modify or discontinue services with or without notice.</p>
+
+        <h3>5. Intellectual Property</h3>
+        <p>All content and services are the intellectual property of our company or our licensors.</p>
+
+        <h3>6. Limitation of Liability</h3>
+        <p>We are not liable for any indirect, incidental, or punitive damages arising from the use of our services.</p>
+
+        <h3>7. Governing Law</h3>
+        <p>These terms are governed by the laws of United States of America, without regard to its conflict of law principles.</p>
+
+        <h3>8. Changes to Terms</h3>
+        <p>We may revise these terms from time to time and will provide notice of significant changes.</p>
+
+        <h3>9. Contact Information</h3>
+        <p>If you have any questions about these terms, please contact us at support@company.com</p>
+    </div>
+</div>
+
+	
+<main>
+	<section id="home">
+		<h1>Welcome to NetDefend Dynamics</h1>
+		<p>At NetDefend, we're not just about cybersecurity; we're about empowering small and medium-sized businesses to thrive in a digital ecosystem that's constantly challenged by cyber threats. Our dedicated team boasts deep expertise in cyber threat intelligence and stays ahead of the curve in understanding the sophisticated methods used by threat actors. By leveraging our insights into the latest tactics used to exploit even the largest organizations, we craft robust, customized security strategies that fit the unique needs and budgets of growing businesses. With us, you gain a proactive partner committed to safeguarding your operations, reputation, and peace of mind without the need for complex and expensive enterprise solutions.</p>
+
+		<!-- Optionally, add a call-to-action button -->
+		<button id="contactButton">Contact Us</button>
+
+		<!-- The Modal -->
+		<div id="contactModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+			<span class="close">&times;</span>
+			<h2>Is this an emergency, do you need assistance right away?</h2>
+			<button id="emergencyButton">Emergency</button>
+			<button id="inquiryButton">General Sales Inquiry</button>
+		  </div>
+		</div>
+	</section>
+	<section id="services">
+		<div class="service" id="monitoring">
+			<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F5a05e672fe54ef1b4ad127a0%2F1606576483485-M3ELTUXPJQJ8ET3SHVZJ%2Fsoc-as-a-service.png" alt="24x7 Monitoring">
+			<h3>24x7 Monitoring</h3>
+	        <a href="#monitoring" class="anchor"></a>
+
+			<p>We provide round-the-clock monitoring to ensure your IT infrastructure is secure and functioning optimally.</p>
+			<ul>
+				<li>Advanced Real-Time Monitoring</li>
+				<li>Efficient Threat Detection Systems</li>
+				<li>Streamlined Incident Management</li>
+			</ul>			
+		</div>
+		<div class="service" id="incident-response">
+			<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvectorified.com%2Fimages%2Fincident-management-icon-4.png" alt="Incident Response">
+			<h3>Incident Response</h3>
+	        <a href="#incident-response" class="anchor"></a>
+
+			<p>Our rapid response team is equipped to handle any cybersecurity incidents to minimize damage and restore systems.</p>
+			<ul>
+				<li>24/7 Monitoring and Response</li>
+				<li>Threat Assessment and Analysis</li>
+				<li>Recovery and Prevention Strategies</li>
+			</ul>			
+		</div>
+		<div class="service" id="pen-testing">
+			<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cloudcape.de%2Fwp-content%2Fuploads%2F2019%2F10%2F03_Penetration_testing_V2-1024x704.png" alt="Penetration Testing Services">
+			<h3>Penetration Testing</h3>
+	        <a href="#pen-testing" class="anchor"></a>
+
+			<p>Identify vulnerabilities with our comprehensive penetration testing services before they can be exploited.</p>
+			<ul>
+				<li>Penetration Testing</li>
+				<li>Red Team Operations</li>
+				<li>Vulnerability Assessments</li>
+			</ul>
+		</div>
+		    <!-- Additional Services -->
+		<div class="service" id="cyber-threat-intelligence">
+			<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Finfotransec.com%2Fwp-content%2Fuploads%2F2019%2F02%2FCyber-Threat-Intelligence.png" alt="Cyber Threat Intelligence">
+			<h3>Cyber Threat Intelligence</h3>
+	        <a href="#cyber-threat-intelligence" class="anchor"></a>
+
+			<p>Gain actionable insights with our CTI services to proactively combat cyber threats and secure your digital landscape.</p>
+			<ul>
+				<li>Threat Landscape Analysis</li>
+				<li>Intelligence-led Security Strategies</li>
+				<li>Customized Threat Reporting</li>
+			</ul>
+		</div>
+		<div class="service" id="threat-hunting">
+			<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.deepwatch.com%2Fwp-content%2Fuploads%2Fdeepwatch-Threat-Hunting-Hero-Graphic.png" alt="Threat Hunting">
+			<h3>Threat Hunting</h3>
+	        <a href="#threat-hunting" class="anchor"></a>
+
+			<p>Our proactive threat hunting identifies and mitigates risks before they can escalate into full-blown incidents.</p>
+			<ul>
+          		<li>IOC Hunt and Analysis</li>
+            	<li>Behavioral Anomaly Detection</li>
+            	<li>Threat Pattern Recognition</li>		
+			</ul>			
+		</div>
+		
+	</section>
+
+
+	<section id="support">
+		<h2>Customer Support</h2>
+		<p>Our dedicated support team is here to help you with any cybersecurity challenges you face. Contact us for assistance and guidance.</p>
+		<!-- Contact form or support details -->
+		<p>Email: support@netdefend.com</p>
+		<p>Phone: 222-333-5555</p>
+	</section>
+    <footer>
+        <p>&copy; 2023 NetDefend Dynamics. All Rights Reserved.</p>
+    	<p><a href="#" onclick="openModal('privacyModal')">Privacy Policy</a> | <a href="#" onclick="openModal('termsModal')">Terms of Service</a> | Site Map</p>
+    </footer>
+</main>
+<script src="script.js"></script>
+
+</body>
+</html>
