@@ -182,7 +182,7 @@ li {
 }
 
 /* Responsive Navigation */
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 999px) {
     .hamburger-menu {
         display: block;
     }
