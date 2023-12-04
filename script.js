@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Emergency and Inquiry Button Handlers
     var emergencyButton = document.getElementById("emergencyButton");
     emergencyButton.onclick = function() {
-      alert("Please call our emergency hotline at 7O8-887-9OO3, or reach us at emergency@cyber.com.");
+      alert("Please call our emergency hotline at 7O8-887-9OO3, or reach us at emergency@netdefend.tech.");
     }
 
     var inquiryButton = document.getElementById("inquiryButton");
     inquiryButton.onclick = function() {
-      alert("Please fill out the form, and we'll reach out to you shortly.");
+      alert("If this is a general sales inquiry, and non emergency email us at support@netdefend.tech.");
     }
 
     // Hamburger Menu
