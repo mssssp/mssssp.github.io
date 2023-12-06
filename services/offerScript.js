@@ -77,3 +77,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
+// Function to open a modal
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'block';
+    }
+}
+
+// Function to close a modal
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
