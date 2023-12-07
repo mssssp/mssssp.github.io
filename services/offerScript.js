@@ -92,4 +92,24 @@ function closeModal(modalId) {
         modal.style.display = 'none';
     }
 }
+document.addEventListener('DOMContentLoaded', (event) => {
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('mouseover', () => {
+      closeAllDropdowns(); // Close all open dropdowns before opening the current one
+      dropdown.querySelector('.dropdown-content').style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+      dropdown.querySelector('.dropdown-content').style.display = 'none';
+    });
+  });
+
+  function closeAllDropdowns() {
+    dropdowns.forEach(dropdown => {
+      dropdown.querySelector('.dropdown-content').style.display = 'none';
+    });
+  }
+});
 
