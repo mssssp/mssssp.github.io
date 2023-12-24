@@ -1,250 +1,1213 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>NetDefend Dynamics</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="logo.png">
-</head>
-<body>
+<html lang="zxx">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- MeanMenu Min CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css" />
+    <!-- Boxicon Min CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <!-- Magnific Min CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Dark CSS -->
+    <link rel="stylesheet" href="assets/css/dark.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
-<header>
-    <nav id="navbar">
-        <img src="logo.png" width="50" height="50"alt="Company Logo">
-        <div class="hamburger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/fav-icon-web.png" />
+    <!-- Tittle -->
+    <title>Home Company/Individual</title>
+  </head>
+
+  <body>
+    <!-- PreLoader Start -->
+    <div class="loader-content">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+          </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-
-            <!-- Products Dropdown -->
-            <li class="dropdown">
-                <a href="#">Products</a>
-                <ul class="dropdown-content">
-                    <li><a href="services/cti.html">Cyber Threat Intelligence</a></li>
-                    <li><a href="services/vs.html">Vulnerability Scanning</a></li>
-                </ul>
-            </li>
-
-            <!-- Services Dropdown -->
-            <li class="dropdown">
-                <a href="#">Services</a>
-                <ul class="dropdown-content">
-                    <li><a href="services/soc.html">24x7 Monitoring</a></li>
-                    <li><a href="services/ir.html">Incident Response</a></li>
-                    <li><a href="services/pt.html">Penetration Testing</a></li>
-                    <li><a href="services/th.html">Threat Hunting</a></li>
-                </ul>
-            </li>
-
-            <li><a href="#support">Support</a></li>
-            <li><a href="https://mssp.getzendo.io">Customer Portal</a></li>
-        </ul>
-    </nav>
-</header>
-
-<div id="portalModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-			<p>Login feature coming soon!</p>
-				<form>
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" placeholder="Your email" disabled>
-
-					<label for="pwd">Password:</label>
-					<input type="password" id="pwd" name="password" placeholder="Your password" disabled>
-
-					<button type="submit" disabled>Login</button>
-				</form>
+      </div>
     </div>
-</div>
-<!-- Privacy Policy Modal -->
-<div id="privacyModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('privacyModal')">&times;</span>
-        <h2>Privacy Policy</h2>
+    <!-- PreLoader End -->
+
+    <!--Navbar Area -->
+    <div class="navbar-area">
+      <div class="mobile-nav">
+        <a href="index.html" class="logo">
+         <img src="assets/images/gif-img.gif" alt="">
+        </a>
+      </div>
+
+      <div class="main-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand me-md-5" href="index.html"><img src="assets/images/gif-img.gif" alt=""></a>
+            <div
+              class="collapse navbar-collapse mean-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link ">Home</a> 
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link dropdown-toggle">Products</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="cti.html" class="nav-link">CTI</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Vuln</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="nw.html" class="nav-link"
+                        >Networking</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">CCTV</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link dropdown-toggle">Services</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">24/7 Monitoring</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                      <a href="ir.html" class="nav-link">Incident Response</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pt.html" class="nav-link"
+                        >Penetration Testing</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="th.html" class="nav-link">Threat Hunting</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Support</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                  
+                </li> 
+              </ul>
+            </div>
+            <div class="nav-right">
+              <form>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control search"
+                    placeholder="Search..."
+                  />
+                </div>
+                <button type="submit" ><i class="bx bx-search"></i></button>
+              </form>
+            </div>
+            <div class="nav-btn">
+              <a href="#" class="box-btn">Contact Us</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Slider Area -->
+    <section class="slider-area-2">
+      <div class="home-slider owl-carousel owl-theme">
+        <div class="single-slider single-slider-bg-1">
+          <div class="d-table">
+            <div class="d-table-cell">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-12 text-center">
+                    <div class="slider-content one">
+                      <h1>Protect Your Company From Cyber Attacks!</h1>
+                      <p>In a digital landscape where cyber threats are not just possibilities but inevitabilities, NetDefend stands as a beacon of proactive defense for small and medium-sized businesses.</p>
+                      <div class="slider-btn text-center">
+                        <a href="#" class="box-btn">Call To Action!</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <h3>1. Introduction</h3>
-        <p>This Privacy Policy outlines our commitment to protecting the privacy and personal data of our users.</p>
 
-        <h3>2. Data Collection and Use</h3>
-        <p>We collect personal data such as names, email addresses, and usage data to provide and improve our services.</p>
+        <div class="single-slider single-slider-bg-2">
+          <div class="d-table">
+            <div class="d-table-cell">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-12 text-center">
+                    <div class="slider-content one">
+                      <h1>
+                        Fortify Your Business Against Cyber Threats!
+                      </h1>
+                      <p>
+                        We specialize in turning insights into action, equipping your business with the foresight to preempt cyber attacks.
+                      </p>
 
-        <h3>3. Data Sharing and Disclosure</h3>
-        <p>Your data is not shared except as required by law or to provide our services, and we take steps to protect your information.</p>
+                      <div class="slider-btn text-center">
+                        <a href="#" class="box-btn">Call To Action!</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h3>4. User Rights</h3>
-        <p>Users have the right to access, correct, or delete their personal data, and can contact us for these purposes.</p>
+        <div class="single-slider single-slider-bg-3">
+          <div class="d-table">
+            <div class="d-table-cell">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-12 text-center">
+                    <div class="slider-content one">
+                      <h1>Shielding Your Business from Cyber Risks!</h1>
+                      <p>
+                        Our expertise in cyber threat intelligence isn't just about safeguarding—it's about empowering your business to operate with confidence in an ecosystem fraught with digital perils. Choose NetDefend for a cybersecurity strategy that's not just about response but about resilience.
+                      </p>
 
-        <h3>5. Data Security</h3>
-        <p>We employ robust security measures to protect user data from unauthorized access, alteration, and disclosure.</p>
+                      <div class="slider-btn text-center">
+                        <a href="#" class="box-btn">Call To Action!</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Slider Area -->
+    <script src="script.js"></script>
 
-        <h3>6. Cookies and Tracking Technologies</h3>
-        <p>Our website uses cookies for functionality and analytics, and users can control these settings in their browser.</p>
+    <!-- Info Area -->
+    <!-- <div class="info-area pt-100 pb-70">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-info">
+              <div class="info-img">
+                <img src="assets/images/info/aboutus.png" alt="info" />
+              </div>
+              <div class="content">
+                <h3><i class="flaticon-info"></i> About Us</h3>
+                <div class="arrow">
+                  <a href="about.html"><i class="flaticon-next-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <h3>7. Policy Updates</h3>
-        <p>We may update this policy, and will notify users of significant changes via our website or through direct communication.</p>
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-info">
+              <div class="info-img">
+                <img src="assets/images/info/vision1.png" alt="info" />
+              </div>
+              <div class="content">
+                <h3><i class="flaticon-support"></i> Our Vision</h3>
+                <div class="arrow">
+                  <a href="about.html"> <i class="flaticon-next-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <h3>8. Contact Information</h3>
-        <p>For any questions or concerns regarding this policy, please contact us at support@netdefend.tech</p>
-    </div>
-</div>
+          <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
+            <div class="single-info si-30">
+              <div class="info-img">
+                <img src="assets/images/info/mission1.png" alt="info" />
+              </div>
+              <div class="content">
+                <h3><i class="flaticon-goal"></i>Our Mission</h3>
+                <div class="arrow">
+                  <a href="about.html"> <i class="flaticon-next-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Info Area -->
+
+    <!-- offering -->
+    <section class="home-service-area pb-70 pt-100">
+      <div class="container">
+        <div class="section-title">
+          <h2>We have offering for 
+            <div class="text-container">
+                <span style="--i: 0">Individuals</span>
+                <span style="--i: 1">Small Businesseses</span>
+                <span style="--i: 2">Medium size Businesses</span>
+            </div>
+          </h2>
+          <p>
+            IBM's 2023 Data Breach Study reports a staggering 15% increase in the cost of cyber incidents over the past three years, with average expenses reaching $4.45 million. This highlights a sobering reality:
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-service">
+              <div class="service-img">
+                <img src="assets/images/th.png" alt="service" />
+              </div>
+
+              <div class="service-content">
+                <h3>Profound Business Disruption</h3>
+                <p>
+                  58% of SMBs experience downtime due to cyberattacks, with 40% losing critical data.
+                </p>
+
+                <a href="#" target="_blank"class="line-bnt">
+                   Read More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-service">
+              <div class="service-img">
+                <img src="assets/images/th.png" alt="service" />
+              </div>
+
+              <div class="service-content">
+                <h3>Cusotmer Trust Detirioration</h3>
+                <p>
+                  The breach could irreparably damage the trust you've built.
+                </p>
+
+                <a href="#"target="_blank" class="line-bnt">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-service">
+              <div class="service-img">
+                <img src="assets/images/th.png" alt="service" />
+              </div>
+
+              <div class="service-content">
+                <h3>Resource Drain</h3>
+                <p>
+                  Significant amounts of time, energy, and financial resources will be diverted to address and rectify the breach.
+                </p>
+
+                <a href="#" target="_blank" class="line-bnt"> Read More </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End offering -->
 
 
-<!-- Terms of Service Modal -->
-<div id="termsModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('termsModal')">&times;</span>
-        <h2>Terms of Service</h2>
+    <!-- Comprehensive -->
+    <section class="home-process-area pt-100 pb-70">
+      <div class="container">
+        <div class="tabs_item">
+              <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-pricing">
+                    <div class="pricing-top-heading mt-4">
+                      <h3>Comprehensive Cyber Protection for Your Business</h3>
+                    </div>
+                    <span><img src="assets/images/vs-3.png"></span>
+                    <ul>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        At NetDefend, we believe in a fortified approach to cybersecurity.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        It's not just about having the right tools; it's about integrating those tools into a structured defense plan that offers complete coverage against the full spectrum of cyber threats.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Our services are designed to safeguard every entry point, provide continuous vigilance, and ensure that your business is equipped to withstand any cyber attack.
+                      </li>
+                    </ul>
+                    <!-- <a class="box-btn" href="shared-hosting.html">
+                      Get Started
+                    </a> -->
+                    <strong class="popular set-title-line">A Fortified Approach</strong>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-pricing">
+                    <div class="pricing-top-heading mt-4">
+                      <h3>Filtering the Gateway to Your Data</h3>
+                    </div>
+                    <span><img src="assets/images/vs-3.png"></span>
+                    <ul>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Emails are often the trojan horses of cyber attacks.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Our advanced monitoring systems scrutinize every incoming email for threats, blocking phishing attempts and malicious content before they can compromise your network.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        By intercepting these threats, we significantly reduce the risk of Business Email Compromise (BEC) attacks, which have been shown to exploit application vulnerabilities and deceive users.
+                      </li>
+                    </ul>
+                    <strong class="popular set-title-line">Email Defense</strong>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-pricing">
+                    <div class="pricing-top-heading mt-4">
+                      <h3>Your First Line of Defense</h3>
+                    </div>
+                    <span><img src="assets/images/vs-3.png"></span>
+                    <ul>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Every device is a gateway to your network.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Our endpoint agents are deployed on PCs, mobile devices, and servers to serve as vigilant sentinels, guarding against intrusion.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        These agents are constantly updated to detect and respond to the latest threats, ensuring your endpoints are not the weak links in your security chain.
+                      </li>
+                    </ul>
+                    <strong class="popular set-title-line">Endpoint Protection</strong>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-pricing">
+                    <div class="pricing-top-heading mt-4">
+                      <h3>Navigating the Web Safely</h3>
+                    </div>
+                    <span><img src="assets/images/vs-3.png"></span>
+                    <ul>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Navigating the web shouldn't be a risky endeavor for your business.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Our content control solutions block access to malicious or suspicious websites, preventing accidental exposure to cyber threats.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        This proactive measure is crucial, as user interaction with dangerous content is a common cause of security breaches.
+                      </li>
+                    </ul>
+                    <strong class="popular set-title-line">Content Control</strong>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-pricing">
+                    <div class="pricing-top-heading mt-4">
+                      <h3>Knowledge-Powered Security</h3>
+                    </div>
+                    <span><img src="assets/images/vs-3.png"></span>
+                    <ul>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Our CTI isn't just about gathering data; it's about transforming that data into actionable intelligence.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        By aligning intelligence gathering with your specific security requirements, we empower our threat hunting team with leads to proactively seek out and neutralize threats that may have evaded initial detection.
+                      </li>
+                    </ul>
+                    <strong class="popular set-title-line">Cyber Threat Intelligence (CTI)</strong>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-pricing">
+                    <div class="pricing-top-heading mt-4">
+                      <h3>Sealing the Cracks</h3>
+                    </div>
+                    <span><img src="assets/images/vs-3.png"></span>
+                    <ul>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Stay one step ahead of attackers who exploit outdated systems and applications.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Our patch management ensures that your software is always up-to-date, mitigating the risk of ransomware and other malware that prey on unpatched vulnerabilities.
+                      </li>
+                    </ul>
+                    <strong class="popular set-title-line">Patch Management</strong>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-pricing">
+                    <div class="pricing-top-heading mt-4">
+                      <h3>Simulating the Adversary</h3>
+                    </div>
+                    <span><img src="assets/images/vs-3.png"></span>
+                    <ul>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        To truly understand your defenses, you must test them.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Our penetration testing does more than just probe for weaknesses; it simulates real-world attacks, including the tactics used to exploit human vulnerabilities. 
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        This comprehensive testing fortifies your business against both technological and social engineering threats, providing a complete defense strategy.
+                      </li>
+                    </ul>
+                    <strong class="popular set-title-line">Penetration Testing</strong>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single-pricing">
+                    <div class="pricing-top-heading mt-4">
+                      <h3>The Silent Sentinels</h3>
+                    </div>
+                    <span><img src="assets/images/vs-3.png"></span>
+                    <ul>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        Our threat hunting experts are the silent sentinels of your network, searching the shadows for signs of adversaries.
+                      </li>
+                      <li>
+                        <i class="bx bx-badge-check"></i>
+                        They proactively hunt for subtle indicators of compromise, ensuring that nothing escapes our notice and that your defenses remain impermeable.
+                      </li>
+                    </ul>
+                    <strong class="popular set-title-line">Proactive Threat Hunting</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="section-title">
+          <p>
+            By integrating these services, NetDefend offers an all-in-one security solution that covers every aspect of your digital presence. With our comprehensive defense plan, we ensure that your business is prepared for and protected against the full spectrum of cyber threats. Let us be your partner in cybersecurity, providing the peace of mind that comes from knowing your business is fortified at every turn.
+          </p>
+        </div>
+    </section>
+    <!-- End Comprehensive -->
+
+    <!-- Important -->
+    <section class="home2-choose-area home-service-area pt-100">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Cyber Security is Important</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-sm-4">
+            <div class="single-choose">
+              <div class="icon">
+                <i class="flaticon-coin"></i>
+              </div>
+              <h3>Average Cost of Data Breach</h3>
+              <small>The global average cost of a data breach has reached $4.45 million in 2023, marking a 15% increase over the last three years. In the United States, this cost is significantly higher at $9.48 million.</small>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-4">
+            <div class="single-choose">
+              <div class="icon">
+                <i class="flaticon-clock"></i>
+              </div>
+              <h3>Detection and Escalation Costs</h3>
+              <small>These costs have jumped 42% over the same period, becoming the largest portion of breach costs. This underscores the complexity and resource intensity of breach investigations.</small>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-4">
+            <div class="single-choose">
+              <div class="icon">
+                <i class="flaticon-calendar"></i>
+              </div>
+              <h3>Ransomware Recovery Costs</h3>
+              <small>The average cost of ransomware recovery is nearly $2 million. This emphasizes the expensive and disruptive nature of ransomware attacks on businesses.</small>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-4">
+            <div class="single-choose">
+              <div class="icon">
+                <i class="flaticon-correct"></i>
+              </div>
+              <h3>Ransomware Payout Increase</h3>
+              <small>The average ransomware payout has increased from $812,380 in 2022 to $1,542,333 in 2023, indicating the escalating costs of such attacks.</small>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-4">
+            <div class="single-choose">
+              <div class="icon">
+                <i class="flaticon-info"></i>
+              </div>
+              <h3>Data Breach Lifecycle</h3>
+              <small>Organizations that implement AI and automation experience a data breach lifecycle that is 108 days shorter compared to those that do not use these technologies</small>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-4">
+            <div class="single-choose">
+              <div class="icon">
+                <i class="flaticon-chip"></i>
+              </div>
+              <h3>Phishing Attacks</h3>
+              <small>Phishing remains a leading attack vector, accounting for more than 80% of reported security incidents. Every minute, $17,700 is lost due to phishing attacks</small>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-4">
+            <div class="single-choose">
+              <div class="icon">
+                <i class="flaticon-support"></i>
+              </div>
+              <h3>Insider Threats</h3>
+              <small>About 43% of all breaches involve insider threats. These can be both intentional and unintentional but are significant contributors to security incidents.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container home-process-area pt-100">
+        <div class="row pb-70">
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-process">
+              <div class="icon">
+                <img src="assets/images/process/p1.png" alt="process" />
+                <span>
+                  <img src="assets/images/process/next2.png" alt="shape" />
+                </span>
+              </div>
+              <div class="content">
+                <h3>Financial Impact</h3>
+                <p>
+                  <i class="bx bx-badge-check"></i>
+                  Display the global and US average costs of data breaches in a comparative bar graph.
+                </p>
+                <p><i class="bx bx-badge-check"></i> Show a trend line of the increasing average ransomware payouts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-process">
+              <div class="icon">
+                <img src="assets/images/process/p2.png" alt="process" />
+                <span class="pro-span">
+                  <img src="assets/images/process/next2.png" alt="shape" />
+                </span>
+              </div>
+              <div class="content">
+                <h3>Response and Recovery</h3>
+                <p>
+                  <i class="bx bx-badge-check"></i>
+                  Use a gauge or meter to represent the average number of days to identify and contain a breach, with and without AI and automation.
+                </p>
+                <p>
+                  <i class="bx bx-badge-check"></i>
+                  Present the average cost of ransomware recovery in a standalone statistic box for emphasis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-process">
+              <div class="icon">
+                <img src="assets/images/process/p3.png" alt="process" />
+                <span>
+                  <img src="assets/images/process/next2.png" alt="shape" />
+                </span>
+              </div>
+              <div class="content">
+                <h3>Attack Vectors and Incidents</h3>
+                <p>
+                  <i class="bx bx-badge-check"></i>
+                  Create pie charts to show the percentage distribution of the types of attacks, highlighting phishing and insider threats.
+                </p>
+                <p>
+                  <i class="bx bx-badge-check"></i>
+                  Include counters for the average amount lost per minute to phishing attacks and the percentage of breaches involving insiders.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-process">
+              <div class="icon">
+                <img src="assets/images/process/p4.png" alt="process" />
+              </div>
+              <div class="content">
+                <h3>Trends and Predictions</h3>
+                <p>
+                  <i class="bx bx-badge-check"></i>
+                  Use a line chart to depict the growth in the number of data breaches and records exposed over time.
+                </p>
+                <p><i class="bx bx-badge-check"></i> Add a forecast model for projected costs of cybercrime in the coming years.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Important -->
+
+    <!-- Start help -->
+    <section class="technology-area ptb-100 bg-color">
+      <div class="container">
+        <h1 class="text-center">How can we help</h1>
+        <p class="text-center">You get ahead of threat actors? With a layered defense and cyber threat intelligence driven approach!</p>
+        <div class="row align-items-center choose-c">
+          <div class="col-lg-6 mt-4">
+            <div class="choose-img">
+              <img src="assets/images/soc.png" alt="choose" />
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="technology-content">
+              <h2>24x7 Monitoring</h2>
+              <p>
+                We provide round-the-clock monitoring to ensure your IT infrastructure is secure and functioning optimally.
+              </p>
+              <ul>
+                <li><i class="bx bx-badge-check"></i> Device and User Risk Monitoring</li>
+                <li><i class="bx bx-badge-check"></i> We support detection on Windows, MacOs, Linux, iPhone, iPad, Android and ChromeOS devices</li>
+                <li><i class="bx bx-badge-check"></i> Streamlined Incident Management</li>
+              </ul>
+              <a href="#" class="line-bnt mt-4">Read More </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center choose-c">
+          <div class="col-lg-6 order-lg-2 mt-4">
+            <div class="choose-img">
+              <img src="assets/images/ir-2.png" alt="choose" />
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1 mt-4">
+            <div class="technology-content">
+              <h2>Incident Response</h2>
+              <p>
+                Our rapid response team is equipped to handle any cybersecurity incidents to minimize damage and restore systems.
+              </p>
+              <ul>
+                <li><i class="bx bx-badge-check"></i> Breach Response and Recovery Strategies</li>
+                <li><i class="bx bx-badge-check"></i> Root Cause Analysis</li>
+                <li><i class="bx bx-badge-check"></i> Minimizing Fallout</li>
+              </ul>
+              <a href="#" class="line-bnt mt-4">Read More </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center choose-c">
+          <div class="col-lg-6 mt-4">
+            <div class="choose-img">
+              <img src="assets/images/pen.png" alt="choose" />
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="technology-content">
+              <h2>Penetration Testing</h2>
+              <p>
+                Identify vulnerabilities with our comprehensive penetration testing services before they can be exploited.
+              </p>
+              <ul>
+                <li><i class="bx bx-badge-check"></i> Detailed Reports with mitigation recommendations</li>
+                <li><i class="bx bx-badge-check"></i> Advanced Persistent Threat Attack Simulation</li>
+                <li><i class="bx bx-badge-check"></i> Vulnerability Assessments and Patch notifications</li>
+              </ul>
+              <a href="#" class="line-bnt mt-4">Read More </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center choose-c">
+          <div class="col-lg-6 order-lg-2 mt-4">
+            <div class="choose-img">
+              <img src="assets/images/cti-1.png" alt="choose" />
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1 mt-4">
+            <div class="technology-content">
+              <h2>Cyber Threat Intelligence</h2>
+              <p>
+                Gain actionable insights with our CTI services to proactively combat cyber threats and secure your digital landscape.
+              </p>
+              <ul>
+                <li><i class="bx bx-badge-check"></i> Threat Landscape Analysis</li>
+                <li><i class="bx bx-badge-check"></i> Intelligence-led Security Strategies</li>
+                <li><i class="bx bx-badge-check"></i> Customized Threat Reporting</li>
+              </ul>
+              <a href="#" class="line-bnt mt-4">Read More </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End help -->
+
+    <!--  Conquer  -->
+    <section class="home-case ptb-100">
+      <div class="container">
+        <div class="section-title">
+          <h2>Conquer any security challenge</h2>
+          <span>Threat Intel driven defenses, based on your threat landscape</span>
+          <p>
+            As cyber threats evolve in complexity, a dynamic and robust security posture is mandatory for any organization. Our services span from proactive monitoring to advanced penetration testing, ensuring that your defenses are ready to repel any cyber attack.
+          </p>
+        </div>
+        <div class="container">
+          <div class="row g-3 align-items-center">
+            <div class="col-md-3">
+              <nav id="myTab" class="nav nav-pills flex-column">
+                <a href="#category_tab1" data-bs-toggle="pill" class="active nav-link set-font-tabs" >Security Operations</a>
+                <a href="#category_tab2" data-bs-toggle="pill" class="nav-link set-font-tabs">Threat Intel</a>
+                <a href="#category_tab3" data-bs-toggle="pill" class="nav-link set-font-tabs">Threat Hunting</a>
+                <a href="#category_tab4" data-bs-toggle="pill" class="nav-link set-font-tabs">Vulnerability Scanning</a>
+                <a href="#category_tab5" data-bs-toggle="pill" class="nav-link set-font-tabs">Pentests</a>
+              </nav>
+            </div>
+            <div class="col-md-9 tab-content">
+              <article class="tab-pane fade show active p-4" id="category_tab1">
+                <h3>Round-the-Clock Vigilance</h3>
+                <p>Our Security Operations are the backbone of our defense strategy, offering continuous surveillance and rapid incident response. By integrating cutting-edge technology with industry best practices, we ensure resilience against cyber threats.</p>
+              </article>
+              <article class="tab-pane fade p-4" id="category_tab2">
+                <h3>Intelligence-Driven Defense</h3>
+                <p>Stay ahead of the curve with our Threat Intelligence services, delivering actionable insights and strategic analysis. We uncover hidden risks and provide the intelligence necessary to anticipate and prepare for potential cyber attacks.</p>
+              </article>
+              <article class="tab-pane fade p-4" id="category_tab3">
+                <h3>Proactive Threat Detection</h3>
+                <p>Our proactive Threat Hunting teams delve deep into your network to identify and neutralize advanced persistent threats before they manifest. Employing sophisticated techniques, we ensure that emerging threats are countered effectively.</p>
+              </article>
+              <article class="tab-pane fade p-4" id="category_tab4"> 
+                <h3>Comprehensive Risk Assessment</h3>
+                <p>Identify vulnerabilities with our comprehensive scanning services. We systematically scan your digital infrastructure to discover potential weaknesses, providing you with the necessary steps to fortify your systems against attacks.</p>
+              </article>
+              <article class="tab-pane fade p-4" id="category_tab5"> 
+                <h3 class="mt-4">Real-World Security Testing</h3>
+                <p>Our Penetration Testing services simulate cyber attacks to test the strength of your defenses. By exploiting vulnerabilities, we provide insights and recommendations to enhance your security measures and protect against real-world attacks.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="row case-list">
+          <div class="col-lg-4 col-sm-6 item cyber">
+            <div class="single-case">
+              <div class="case-img">
+                <a href="case-details.html">
+                  <img src="assets/images/case/data.png" alt="case" />
+                </a>
+              </div>
+
+              <div class="content">
+                <a href="case-details.html">
+                  <h3>Data Analytics Automation</h3>
+                </a>
+                <p>
+                  Pain Point: Manual Data Analysis and Insights Extraction<br>
+                  Solution: AI-Powered Data Analytics Platform<br>
+                  Result: Actionable Insights and Informed Decision-Making
+                  
+                </p>
+
+                <a href="case-details.html" class="line-bnt">
+                  View Project Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 item dev design">
+            <div class="single-case">
+              <div class="case-img">
+                <a href="case-details1.html">
+                  <img src="assets/images/case/supply.png" alt="case" />
+                </a>
+              </div>
+
+              <div class="content">
+                <a href="case-details1.html">
+                  <h3>Transforming Supply Chain</h3>
+                </a>
+                <p>
+                  Pain Point: Lack of Transparency and Traceability in Supply Chain<br>
+                  Solution: MetV Blockchain for Enhanced Supply Chain Transparency and Efficiency<br>
+                  Result: Improved Supply Chain Visibility, Trust, and Operational Efficiency
+                  
+                </p>
+
+                <a href="case-details1.html" class="line-bnt">
+                  View Project Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 item dev">
+            <div class="single-case">
+              <div class="case-img">
+                <a href="case-details2.html">
+                  <img src="assets/images/case/gaming.png" alt="case" />
+                </a>
+              </div>
+
+              <div class="content">
+                <a href="case-details2.html">
+                  <h3>  Elevating gaming experience </h3>
+                </a>
+                <p>
+                  Industry: Gaming
+                  Pain Point: Limited Player Engagement and Revenue Growth<br>
+                  Solution: AGI-Powered Gaming Platform <br>
+                  Result: Enhanced Player Engagement, Targeted Monetization, and Business Success
+
+                </p>
+
+                <a href="case-details2.html" class="line-bnt">
+                  View Project Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 item dev cyber">
+            <div class="single-case">
+              <div class="case-img">
+                <a href="case-details3.html">
+                  <img src="assets/images/case/customer.png" alt="case" />
+                </a>
+              </div>
+
+              <div class="content">
+                <a href="case-details3.html">
+                  <h3>Revolutionising Personalised Customer Service 
+                  </h3>
+                </a>
+                <p>
+                  Industry: Mobile Phone Retail<br>
+                   Pain Point: High Turnover and Limited Margins Limiting Service
+                  <br>
+                  Solution: AI-Driven Chatbot for Seamless Customer Support <br>
+                  Result: Improved Customer Satisfaction, Increased Efficiency, Cost Savings
+                  
+                </p>
+
+                <a href="case-details3.html" class="line-bnt">
+                  View Project Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 item dev design">
+            <div class="single-case">
+              <div class="case-img">
+                <a href="case-details4.html">
+                  <img src="assets/images/case/rename.png" alt="case" />
+                </a>
+              </div>
+
+              <div class="content">
+                <a href="case-details4.html">
+                  <h3> New-Age News Experience </h3>
+                </a>
+                <p>
+                  Industry: News and Media<br>
+                  Pain Point: Lack of Personalization, Fake News Challenges, Limited Insights<br>
+                  Solution: AGI-Driven News and Media Platform for Personalised User Content, Fake News Filtering, and deeper Insights
+                  <br>
+                  Result: Enhanced User Experience, Trustworthy News Consumption, and Access to Unparalleled Insights
+
+                </p>
+
+                <a href="case-details4.html" class="line-bnt">
+                  View Project Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 item dev cyber design">
+            <div class="single-case">
+              <div class="case-img">
+                <a href="case-details5.html">
+                  <img src="assets/images/case/social.png" alt="case" />
+                </a>
+              </div>
+
+              <div class="content">
+                <a href="case-details5.html">
+                  <h3>Social Media Campaigns</h3>
+                </a>
+                <p>
+                  Industry: Media and Marketing Agencies<br>
+                  Pain Point: Manual Social Media Campaign Creation and Publishing Processes<br>
+                  Solution: AI-Powered Content Automation Platform for Streamlined Workflow<br>
+                  Result: Enhanced Efficiency, Timely Publishing, and Targeted Content Delivery
+
+                </p>
+
+                <a href="case-details5.html" class="line-bnt">
+                  View Project Details
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
         
-        <h3>1. Acceptance of Terms</h3>
-        <p>By using our services, you agree to these terms. If you do not agree, do not use our services.</p>
+      </div>
+    </section>
+    <!-- End Conquer -->
 
-        <h3>2. Use of Services</h3>
-        <p>Services are provided as-is. Users are responsible for compliance with local laws and regulations.</p>
+    <!-- REASON TO CHOOSE US -->
+    <section class="home-blog-area bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="single-blog d-flex mb-0">
+              <div class="blog-img">
+                <a href="#">
+                  <img src="assets/images/th-2.png" alt="blog" />
+                </a>
+              </div>
 
-        <h3>3. User Responsibilities</h3>
-        <p>Users must not use our services for illegal activities or violate the rights of others.</p>
+              <div class="content">
+                <ul>
+                  <li>REASON TO CHOOSE US</li>
+                </ul>
 
-        <h3>4. Service Modifications</h3>
-        <p>We reserve the right to modify or discontinue services with or without notice.</p>
+                <a href="blog-details.html">
+                  <h3>Technology & Vendor Agnostic</h3>
+                </a>
+                <p>
+                  Discover the latest in cybersecurity with our expert blog. Stay tuned for in-depth articles on how to fortify your digital assets, the evolution of threat landscapes, and actionable strategies to stay one step ahead of cybercriminals.
+                </p>
 
-        <h3>5. Intellectual Property</h3>
-        <p>All content and services are the intellectual property of our company or our licensors.</p>
+                <a href="blog-details.html" class="line-bnt">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <!-- End REASON TO CHOOSE US -->
 
-        <h3>6. Limitation of Liability</h3>
-        <p>We are not liable for any indirect, incidental, or punitive damages arising from the use of our services.</p>
+    <!-- Home Contact Area -->
+    <section class="home-contact-area home-2-contact pt-100">
+      <div class="container">
+        <div class="section-title mb-3">
+          <span><h2>Customer Support</h2></span>
+          <p>
+            Our dedicated customer support team is your reliable partner in navigating the complexities of cybersecurity. With specialized non-emergency and emergency channels, we guarantee expert guidance and swift action, ensuring that help is just a call or click away.
+          </p>
+        </div>
 
-        <h3>7. Governing Law</h3>
-        <p>These terms are governed by the laws of United States of America, without regard to its conflict of law principles.</p>
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="content">
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12">
+                    <div class="form-group">
+                      <h3>NonEmergency</h3>
+                      <ul>
+                        <li>Email: <a href="support@netdefend.tech">support@netdefend.tech</a></li>
+                        <li>Phone: <a href="tel:7O8-887-9OO3">7O8-887-9OO3</a></li>
+                      </ul>
+                    </div>
+                    <div class="form-group">
+                      <h3>Emergency</h3>
+                      <ul>
+                        <li>Please call our emergency hotline at <a href="tel:7O8-887-9OO3">7O8-887-9OO3</a></li>
+                        <li>Or reach us at <a href="mailto:emergency@netdefend.tech">emergency@netdefend.tech</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
 
-        <h3>8. Changes to Terms</h3>
-        <p>We may revise these terms from time to time and will provide notice of significant changes.</p>
+          <div class="col-lg-6 col-md-6">
+            <div class="text-center">
+              <img src="assets/images/customer-support.png" alt="contact" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Area -->
 
-        <h3>9. Contact Information</h3>
-        <p>If you have any questions about these terms, please contact us at support@netdefend.tech</p>
-    </div>
-</div>
+    <!-- Footer Area -->
+    <footer class="footer-area footer-area-2 pt-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 logo-center">
+            <div class="content">
+              <div class="logo">
+                <a href="index.html"
+                  ><h1 class="index.html">LOGO HERE</h1></a>
+              </div>
+              <p>
+               
+              </p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="content ml-15">
+              <h3>Our Products</h3>
+              <ul class="footer-list">
+                <li><a href="cti.html">CTI
+                </a></li>
+                <li><a href="#">Vuln
+                </a></li>
+                <li><a href="nw.html">Networking
+                </a></li>
+                <li><a href="#">CCTV</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="content">
+              <h3>Our Services</h3>
+              <ul class="footer-list">
+                <li><a href="#">24/7 Monitoring</a></li>
+                <li><a href="ir.html">Incident Response</a></li>
+                <li><a href="pt.html">Penetration Testing</a></li>
+                <li><a href="th.html">Threat Hunting</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="content contacts">
+              <h3 class="ml-40">Contact</h3>
+              <ul class="footer-list foot-social">
+             
+                <li>
+                  <a href="mailto:hello@paso.com"
+                    ><i class="bx bxs-envelope"></i> support@netdefend.tech</a
+                  >
+                </li>
+                
+                <li><i class="bx bxs-map"></i> Address: 81, Dummy Street, New York, USA</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	
-<main>
-	<section id="home">
-		<h1>Reliable Cybersecurity, Tailored for Your Business Needs.</h1>
-		<p>At NetDefend, we're not just about cybersecurity; we're about empowering small and medium-sized businesses to thrive in a digital ecosystem that's constantly challenged by cyber threats. Our dedicated team boasts deep expertise in cyber threat intelligence and stays ahead of the curve in understanding the sophisticated methods used by threat actors. By leveraging our insights into the latest tactics used to exploit even the largest organizations, we craft robust, customized security strategies that fit the unique needs and budgets of growing businesses. With us, you gain a proactive partner committed to safeguarding your operations, reputation, and peace of mind without the need for complex and expensive enterprise solutions.</p>
-
-		<!-- Optionally, add a call-to-action button -->
-		<button id="contactButton">Contact Us</button>
-
-		<!-- The Modal -->
-		<div id="contactModal" class="modal">
-		  <!-- Modal content -->
-		  <div class="modal-content">
-			<span class="close">&times;</span>
-			<h2>Is this an emergency, do you need assistance right away?</h2>
-			<button id="emergencyButton">Emergency</button>
-			<button id="inquiryButton">General Sales Inquiry</button>
-		  </div>
-		</div>
-	</section>
-	<section id="services">
-		<div class="service" id="monitoring">
-			<img src="images/soc.png" alt="24x7 Monitoring">
-			<h3>24x7 Monitoring</h3>
-	        <a href="#monitoring" class="anchor"></a>
-
-			<p>We provide round-the-clock monitoring to ensure your IT infrastructure is secure and functioning optimally.</p>
-			<ul>
-				<li>Advanced Real-Time Monitoring</li>
-				<li>Efficient Threat Detection Systems</li>
-				<li>Streamlined Incident Management</li>
-			</ul>
-			<button onclick="location.href='services/soc.html'" class="button">Read More</button>
-
-		</div>
-		<div class="service" id="incident-response">
-			<img src="images/IR.png" alt="Incident Response">
-			<h3>Incident Response</h3>
-	        <a href="#incident-response" class="anchor"></a>
-
-			<p>Our rapid response team is equipped to handle any cybersecurity incidents to minimize damage and restore systems.</p>
-			<ul>
-				<li>24/7 Monitoring and Response</li>
-				<li>Threat Assessment and Analysis</li>
-				<li>Recovery and Prevention Strategies</li>
-			</ul>			
-			<button onclick="location.href='services/ir.html'" class="button">Read More</button>
-		</div>
-		<div class="service" id="pen-testing">
-			<img src="images/pen.png" alt="Penetration Testing Services">
-			<h3>Penetration Testing</h3>
-	        <a href="#pen-testing" class="anchor"></a>
-
-			<p>Identify vulnerabilities with our comprehensive penetration testing services before they can be exploited.</p>
-			<ul>
-				<li>Penetration Testing</li>
-				<li>Red Team Operations</li>
-				<li>Vulnerability Assessments</li>
-			</ul>
-			<button onclick="location.href='services/pt.html'" class="button">Read More</button>
-		</div>
-		    <!-- Additional Services -->
-		<div class="service" id="cyber-threat-intelligence">
-			<img src="images/cti.png" alt="Cyber Threat Intelligence">
-			<h3>Cyber Threat Intelligence</h3>
-	        <a href="#cyber-threat-intelligence" class="anchor"></a>
-
-			<p>Gain actionable insights with our CTI services to proactively combat cyber threats and secure your digital landscape.</p>
-			<ul>
-				<li>Threat Landscape Analysis</li>
-				<li>Intelligence-led Security Strategies</li>
-				<li>Customized Threat Reporting</li>
-			</ul>
-			<button onclick="location.href='services/cti.html'" class="button">Read More</button>
-		</div>
-		<div class="service" id="threat-hunting">
-			<img src="images/th.png" alt="Threat Hunting">
-			<h3>Threat Hunting</h3>
-	        <a href="#threat-hunting" class="anchor"></a>
-
-			<p>Our proactive threat hunting identifies and mitigates risks before they can escalate into full-blown incidents.</p>
-			<ul>
-          		<li>IOC Hunt and Analysis</li>
-            	<li>Behavioral Anomaly Detection</li>
-            	<li>Threat Pattern Recognition</li>		
-			</ul>			
-			<button onclick="location.href='services/th.html'" class="button">Read More</button>
-		</div>
-		<div class="service" id="vulnerability-scanning">
-			<img src="images/vs.png" alt="Vulnerability Scanning">
-			<h3>Vulnerability Scanning</h3>
-			<p>Our Vulnerability Scanning service provides a comprehensive assessment of your publicly visible infrastructure, identifying and evaluating potential vulnerabilities to minimize risks to your organization.</p>
-			<ul>
-				<li>Comprehensive Infrastructure Analysis</li>
-				<li>Strategic Patch Management</li>
-				<li>Continuous Monitoring and Alerting</li>
-			</ul>          
-			
-			<button onclick="location.href='services/vs.html'" class="button">Read More</button>
-		</div>
-
-		
-	</section>
-
-
-	<section id="support">
-		<h2>Customer Support</h2>
-		<p>Our dedicated support team is here to help you with any cybersecurity challenges you face. Contact us for assistance and guidance.</p>
-		<!-- Contact form or support details -->
-		<p>Email: support@netdefend.tech</p>
-		<p>Phone: 7O8-887-9OO3</p>
-	</section>
-    <footer>
-        <p>&copy; 2023 NetDefend Dynamics. All Rights Reserved.</p>
-    	<p><a href="#" onclick="openModal('privacyModal')">Privacy Policy</a> | <a href="#" onclick="openModal('termsModal')">Terms of Service</a> | Site Map</p>
+      <div class="copy-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="menu">
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="#">Site Map</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 text-right">
+              <p class="right">
+                © 2023 NetDefend Dynamics. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-</main>
-<script src="script.js"></script>
+    <!-- End Footer Area -->
 
-</body>
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+      <i class="bx bx-chevrons-up"></i>
+      <i class="bx bx-chevrons-up"></i>
+    </div>
+    <!-- End Go Top Area -->
+
+    <!-- jQuery Min JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap Bundle Min JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- MeanMenu Min JS -->
+    <script src="assets/js/meanmenu.min.js"></script>
+    <!-- Magnific Popup Min JS -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- Owl carasol Min Js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Wow Min js -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Isotope MinJs -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Form Ajaxchimp Min JS -->
+    <script src="assets/js/ajaxchimp.min.js"></script>
+    <!-- Form Validator Js  -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact Form Min Js -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.querySelectorAll('#myTab a').forEach(function(everyitem){  
+        var tabTrigger = new bootstrap.Tab(everyitem)
+        everyitem.addEventListener('mouseenter', function(){
+          tabTrigger.show();
+        });
+        
+      });
+    </script>
+  </body>
 </html>
