@@ -6794,3 +6794,12 @@ Banner Area Three Style
 .slider-blog.slider-area-2 .single-slider-bg-2 {
   background: url(../images/blog-2.jpg);
 }
+
+.set-img-height {
+  height: 450px;
+}
+.set-img-height img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

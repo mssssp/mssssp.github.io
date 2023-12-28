@@ -59,7 +59,7 @@ jQuery(function ($) {
   nav: true,
   dots: false,
   autoplay: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 7000,
   items: 1,
   animateOut: 'animate__animated animate__fadeOut',
   margin: 0,
