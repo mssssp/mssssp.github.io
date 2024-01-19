@@ -6803,3 +6803,11 @@ Banner Area Three Style
   width: 100%;
   object-fit: cover;
 }
+
+.navbar-brand img {
+  height: 66px;
+}
+.logo img {
+  height: 52px;
+  margin-top: 6px;
+}
