@@ -32,6 +32,30 @@
     <link rel="icon" type="image/png" href="assets/images/fav-icon-web.png" />
     <!-- Tittle -->
     <title>Privacy Policy</title>
+
+    <style>
+        /* Style for the overlay and loading bar container */
+        #loadingOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style for the loading bar */
+        #loadingBar {
+            width: 50%; /* Adjust the width of the loading bar */
+            max-width: 300px;
+            height: 5px;
+            background-color: #4CAF50;
+        }
+    </style>
   </head>
 
   <body>
@@ -232,11 +256,46 @@
           </div>
         </div>
       </div>
-    </sectio>
+    </section>
     <!-- End Privacy -->
+    <!-- Overlay with loading bar -->
+    <div id="loadingOverlay">
+        <div id="loadingBar">LOADING CONTACT FORM, PLEASE WAIT</div>
+    </div>
+	<script>
+		function animateLoadingBar() {
+			var loadingBar = document.getElementById('loadingBar');
+			var width = 0;
+			var duration = 10000; // Total duration of the loading bar in milliseconds (12 seconds)
+			var intervalTime = 100; // Time between each frame update in milliseconds
+			var totalFrames = duration / intervalTime; // Total number of times the frame function will be called
+			var increment = 100 / totalFrames; // Percentage to increase the width each time
+
+			var interval = setInterval(frame, intervalTime);
+
+			function frame() {
+				if (width >= 100) {
+					clearInterval(interval);
+					document.getElementById('loadingOverlay').style.display = 'none';
+				} else {
+					width += increment;
+					loadingBar.style.width = width + '%';
+				}
+			}
+		}
+
+		// Start the loading animation
+		window.onload = animateLoadingBar;
+	</script>
+
 
 	<!-- Contact Form -->
+    <!-- Script for the contact form -->
+
 	<script type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+
+    <!-- Embed the contact form -->
+
 	<zapier-interfaces-page-embed page-id='clrn4azfw000xlbg9rftk8skz' no-background='true'  style='max-width: 900px; height: 1100px;'></zapier-interfaces-page-embed>
 
 	<!-- Footer Area -->
